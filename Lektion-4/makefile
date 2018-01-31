@@ -1,5 +1,5 @@
 #
-# Maktefile für den CPP-Lehrgang
+# Makefile für den CPP-Lehrgang
 #
 # Thomas Wenzlaff http://www.wenzlaff.de 
 #
@@ -19,9 +19,8 @@ start-prog: $(OBJS)
 
 start-prog.o: Temperatur.cpp Temperatur.h programm-4.cpp
 
-# für das löschen mit make clean
+# für das Löschen mit make clean
 clean:
 	$(RM) start-prog
 
 distclean: clean
-
