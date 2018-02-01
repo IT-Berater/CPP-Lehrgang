@@ -4,6 +4,8 @@
 # Thomas Wenzlaff http://www.wenzlaff.de 
 #
 
+# Der Programm Name
+PRGNAME=start-prog
 # Der CPP Compiler
 CXX=g++
 # Flags
@@ -12,15 +14,13 @@ LDFLAGS=-Wall -ansi
 SRCS=programm-4.cpp Temperatur.cpp
 OBJS=$(subst .cc,.o,$(SRCS))
 # Der Programmname der erzeugt wird
-all: start-prog
+all: $(PRGNAME)
 
 start-prog: $(OBJS)
-	$(CXX) $(LDFLAGS) -o start-prog $(OBJS) $(LDLIBS) 
-
-start-prog.o: Temperatur.cpp Temperatur.h programm-4.cpp
+	$(CXX) $(LDFLAGS) -o $(PRGNAME) $(OBJS) $(LDLIBS) 
 
 # für das Löschen mit make clean
 clean:
-	$(RM) start-prog
+	$(RM) $(PRGNAME)
 
 distclean: clean
