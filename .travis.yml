@@ -14,5 +14,5 @@ script:
   - g++ -Wall -ansi -o start-prg-2 ./Lektion-2/Temperatur.cpp ./Lektion-2/programm-2.cpp
   
   - g++ -Wall -ansi -o start-prg-4 ./Lektion-4/Temperatur.cpp ./Lektion-4/programm-4.cpp
-  - make -f ./Lektion-4/makefile
+  - make -f "./Lektion-4/makefile"
  
