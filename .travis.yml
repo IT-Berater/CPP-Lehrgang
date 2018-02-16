@@ -10,5 +10,8 @@ compiler:
 
 script:
   - make -version
+  - g++ -o start-prg-1 ./Lektion-1/programm-1.cpp
+  - g++ -Wall -ansi -o start-prg-2 ./Lektion-2/Temperatur.cpp ./Lektion-2/programm-2.cpp
+  
   - g++ -Wall -ansi -o start-prg-4 ./Lektion-4/Temperatur.cpp ./Lektion-4/programm-4.cpp
  
