@@ -1,0 +1,13 @@
+sudo: required
+language: c
+
+os:
+  - linux
+  - osx
+
+compiler:
+  - gcc
+
+script:
+  - make -version
+ 
