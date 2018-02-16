@@ -1,5 +1,5 @@
 sudo: required
-language: c
+language: cpp
 
 os:
   - linux
@@ -10,4 +10,5 @@ compiler:
 
 script:
   - make -version
+  - g++ -Wall -ansi -o start-prg-4 ./Lektion-4/Temperatur.cpp ./Lektion-4/programm-4.cpp
  
